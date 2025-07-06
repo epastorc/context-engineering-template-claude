@@ -5,7 +5,14 @@ This repository demonstrates an Angular project following Domain-Driven Design (
 ## Quick Start
 
 1. Clone this repository
-2. Begin using context engineering commands: `execute-prp prp-file-name`, `generate-prp "description"`, `refactor`, `validate`
+2. Try the context engineering workflow:
+   ```bash
+   # Generate a new PRP (Product Requirements Prompt)
+   generate-prp "Add user authentication feature with JWT tokens"
+   
+   # Execute the generated PRP
+   execute-prp prp-user-authentication.md
+   ```
 
 ## Table of Contents
 
@@ -52,7 +59,6 @@ This template demonstrates context engineering through:
 └── README.md               # This file
 ```
 
-The `example-prp/` folder contains an example of PRP generation that demonstrates the context engineering workflow and serves as a template for creating your own PRPs.
 
 ## Step-by-Step Guide
 
@@ -80,8 +86,8 @@ Use the `execute-prp prp-file-name` command to implement the proposed changes fo
 
 This template includes custom commands for context engineering workflows:
 
-- `execute-prp prp-file-name` - Execute a Pull Request Proposal following established patterns
-- `generate-prp "description"` - Generate a Pull Request Proposal with detailed implementation plan
+- `execute-prp prp-file-name` - Execute a Product Requirements Prompt following established patterns
+- `generate-prp "description"` - Generate a Product Requirements Prompt with detailed implementation plan
 - `refactor` - Refactor existing code following DDD and SOLID principles
 - `validate` - Validate code against project standards and run tests
 
